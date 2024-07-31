@@ -1,0 +1,47 @@
+﻿@page "{id:int}"
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Guitar";
+}
+
+<h2>Edit Guitar</h2>
+
+<h4>Guitar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Guitar.Id" class="control-label"></label>
+                <input asp-for="Guitar.Id" class="form-control" readonly />
+            </div>
+            <div class="form-group">
+                <label asp-for="Guitar.Make" class="control-label"></label>
+                <input asp-for="Guitar.Make" class="form-control" />
+                <span asp-validation-for="Guitar.Make" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guitar.Model" class="control-label"></label>
+                <input asp-for="Guitar.Model" class="form-control" />
+                <span asp-validation-for="Guitar.Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guitar.Shape" class="control-label"></label>
+                <input asp-for="Guitar.Shape" class="form-control" />
+                <span asp-validation-for="Guitar.Shape" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Guitar.Strings" class="control-label"></label>
+                <input asp-for="Guitar.Strings" class="form-control" />
+                <span asp-validation-for="Guitar.Strings" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-secondary" asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,49 @@
+﻿@page "{id:int}"
+@model DetailsModel
+@{
+    ViewData["Title"] = "Guitar Details";
+}
+
+<h2>Guitar Details</h2>
+
+<div>
+    <h4>Guitar</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Id
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Guitar.Id
+        </dd>
+        <dt class="col-sm-2">
+            Make
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Guitar.Make
+        </dd>
+        <dt class="col-sm-2">
+            Model
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Guitar.Model
+        </dd>
+        <dt class="col-sm-2">
+            Shape
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Guitar.Shape
+        </dd>
+        <dt class="col-sm-2">
+            Strings
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Guitar.Strings
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="./Edit/" asp-route-id="@Model.Guitar.Id" class="btn btn-primary">Edit</a> |
+    <a asp-page="./Index/" class="btn btn-secondary">Back to List</a>
+</div>

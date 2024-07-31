@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h2>Guitars</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Shape</th>
+            <th>Strings</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var guitar in Model.Guitars)
+        {
+            <tr>
+                <td>@guitar.Id</td>
+                <td>@guitar.Make</td>
+                <td>@guitar.Model</td>
+                <td>@guitar.Shape</td>
+                <td>@guitar.Strings</td>
+                <td>
+                    <a asp-page="./Details" asp-route-id="@guitar.Id">Details</a> |
+                    <a asp-page="./Edit/" asp-route-id="@guitar.Id">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@guitar.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a asp-page="./Create" class="btn btn-primary">Create New</a>

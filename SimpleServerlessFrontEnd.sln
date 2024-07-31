@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleServerlessFrontEnd", "SimpleServerlessFrontEnd\SimpleServerlessFrontEnd.csproj", "{636CC87A-D95C-4FE3-806B-E187CD491224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{636CC87A-D95C-4FE3-806B-E187CD491224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636CC87A-D95C-4FE3-806B-E187CD491224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636CC87A-D95C-4FE3-806B-E187CD491224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636CC87A-D95C-4FE3-806B-E187CD491224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDDEF6C1-6AE3-4CEB-BD73-55CD2859E84E}
+	EndGlobalSection
+EndGlobal
